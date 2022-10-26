@@ -5,6 +5,48 @@
 	box-sizing: border-box;
 
 }
+.marq img
+{
+	width: 170px;
+	height: 170px;
+	padding: 20px;
+}
+.wcu-section-heading,.wcu-section-description
+{
+	text-align: center;
+}
+.desclass
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-top: 0%;
+}
+.desclass .description
+{
+	width: 90%;
+	height: 30%;
+	margin-left: 150;
+}
+.desclass .aboutimage
+{
+	
+	width: 370px;
+	margin-right: 140px;
+	
+}
+.aboutheading
+{
+	display: block;
+	color: #183b56;
+	font-family: "Roboto";
+	font-size: 28px;
+	font-weight: 700;
+	margin-left:150px;
+
+}
 .a
 {
 	width: 100%;
