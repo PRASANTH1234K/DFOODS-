@@ -1,0 +1,264 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+.a
+{
+	width: 100%;
+	height: 400px;
+	background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/foodmunch-banner-bg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: teal;
+	text-align: right;
+}
+.a ul
+{
+	display: inline-flex;
+	color: white;
+	word-wrap: none;
+}
+.a ul li
+{
+	padding: 15px;
+	margin: 15px;
+	list-style: none;
+}
+.a .h
+{
+	position: relative;
+	width: 25%;
+	height: 30%;
+	float: left;
+
+}
+.a ul li a
+{
+	text-decoration: none;
+}
+.a ul li:hover
+{
+	border-style:none;
+	background-color: springgreen;
+	border-radius: 15px;
+}
+#home
+{
+	border-style:none;
+	background-color: springgreen;
+	border-radius: 15px;
+}
+.search
+{
+	text-align: center;
+	padding-top: 80px;
+
+}
+.input
+{
+	width: 50%;
+	height: 55px;
+	border-radius: 15px;
+	border: 2px solid black;
+}
+span
+{
+	color: aliceblue;
+}
+.butt
+{
+	width: 130px;
+	height: 40px;
+	background-color: cornflowerblue;
+	border-radius: 10px;
+}
+.div1
+{
+	display: flex;
+	align-items: center;
+	margin: 35px auto;
+}
+.div1 .f1
+{
+	background: black;
+  width: 230px;
+  height: 290px;
+  margin: auto;
+  box-shadow: 10px 10px 8px #888888;
+  border-radius: 20px 20px;
+
+}
+.img,.img1,.img2,.img3 {
+	display: none;
+	width: 100%;
+	height: 55%;
+  }
+
+  .div2
+{
+	display: flex;
+	align-items: center;
+	margin: 65px auto;
+}
+.div2 .f2
+{
+
+	background-color:black;
+  width: 230px;
+  height: 290px;
+  margin: auto;
+  box-shadow: 10px 10px 8px #888888;
+  border-radius: 20px 20px;
+
+}
+.img4,.img5,.img6,.img7 {
+	display: none;
+	width: 100%;
+	height: 55%;
+  }
+
+  .hea
+  {
+	margin: 20px;
+	color: gold;
+	
+  }
+  .he3
+  {
+	text-decoration: underline;
+	margin-left: 30px;
+	color: aqua;
+  }
+  li
+  {
+	margin-left: 60px;
+	padding-top: 10px;
+	color: wheat;
+
+  }
+
+  .footer
+  {
+	display: flex;
+	justify-content: left;
+	align-items: left;
+	margin:30px;
+	padding-left: 190px;
+  }
+  .liat4
+{
+	text-align: center;
+}  
+.view
+{
+	background-color: gold;
+	color: black;
+	border-colorb:black;
+}
+.thanking-customers-section {
+	background-color:white;
+  }
+  .thanking-customers-section-heading {
+	color: #183b56;
+	font-family: "Roboto";
+	font-size: 28px;
+	font-weight: 700;
+  }
+  .thanking-customers-section-description {
+	color: #5a7184;
+	font-family: "Roboto";
+	font-size: 16px;
+  }
+  .thanking-customers-section-img {
+	width: 270px;
+	margin-bottom: 20px;
+  }
+  .delivery-and-payment-section {
+	background-color: white;
+  }
+  .delivery-and-payment-section-img {
+	width: 270px;
+  }
+  .delivery-and-payment-section-heading {
+	color: #183b56;
+	font-family: "Roboto";
+	font-size: 28px;
+	font-weight: 700;
+  }
+  .delivery-and-payment-section-description {
+	color: #5a7184;
+	font-family: "Roboto";
+	font-size: 16px;
+  }
+  .payment-card-img {
+	width: 50px;
+	height: 50px;
+	margin-right: 28px;
+  }
+  .healthy-food-section {
+	background-color: #f9fbfe;
+  }
+  .healthy-food-section-img {
+	width: 270px;
+  }
+  .healthy-food-section-heading {
+	color: #183b56;
+	font-family: "Roboto";
+	font-size: 28px;
+	font-weight: 700;
+  }
+  .healthy-food-section-description {
+	color: #5a7184;
+	font-family: "Roboto";
+	font-size: 16px;
+  }
+  .custom-button
+  {
+	background-color: black;
+	color: white;
+	border-radius: 10px;
+  }
+ 
+  
+.headings
+{
+	position: relative;
+	font-size: 2em;
+	letter-spacing: 10px;
+	color: #aa660c;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	-webkit-box-reflect:below 1px linear-gradient(transparent,#0008);
+	line-height: 0.70em;
+	outline: none;
+	animation: animate 5s linear infinite;
+
+
+@keyframes animate: {
+	0%
+	{
+       color: #fff;
+       text-shadow: none;
+	}
+	18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+	{
+		color: #fff;
+		text-shadow: 0 0 10px #03bcf4,
+		0 0 20px #03bcf4,
+		0 0 40px #03bcf4,
+		0 0 80px #03bcf4,
+		0 0 160px #03bcf4,
+		
+	}
+}
+}
+.viewde
+{
+	text-align: center;
+	margin-top: 60px;
+	color:white;
+}
