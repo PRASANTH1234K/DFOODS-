@@ -1,0 +1,974 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="aos.css">
+        <script src="aos.js"></script>
+<link rel="stylesheet" href="web2.css"/>
+<link rel="stylesheet" href="aos.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>   
+
+</head>
+    <body>
+        <div class="cartopen" id="cartzz">
+            <img src="Untitled-1.png" class="r">
+            
+        
+         <div class="tit">
+            <button class="cabu1">CART ITEM</button>
+            <button class="cabu1">TRACK ITEMS</button>
+            <button class="cabu1 closecart fa fa-minus-circle" id="closecart">CLOSE CART</button>
+         </div>
+           <hr>
+            <div id="tit">
+                <table id="carttable">
+                    <tr>
+                      <th style="width:90px;">Item Img</th>
+                      <th>Item Name</th>
+                      <th>Total Rate</th>
+                      <th>Items</th>
+                      <th style="width: 150px;">ACTIONS</th>
+                    </tr>
+                    
+                  </table>
+            </div>
+        </div>
+        <div class="head">
+            <img src="logo5.png" class="t">
+            <button class="togge" id="togg" onclick="res()"><i class="fa fa-bars" aria-hidden="true"></i></button>
+            <div class="heading hedeselect" id="hhh">
+                <select class="select"> 
+                 <option>YOUR LOCATION</option>
+                <option>INDIA</option>
+                <option>INDIA</option>
+                <option>INDIA</option>
+                <option>INDIA</option>
+             </select>
+             <select class="select"> 
+                 <option class="op">YOUR RESTAURANTS</option>
+                <option class="op">MAHATHI</option>
+                <option class="op">HEAVEN</option>
+                <option class="op">RESTU1</option>
+                <option class="op">INDIA</option>
+             </select>
+             <button class="cart1" id="cart" onclick="toggleCheck()">MY CART  <span class="sp" id="spa">0</span>
+             </button>
+             
+             </div>
+             
+        </div>
+   
+        <hr>
+            <div class="menuButtons">
+                <button class="menuButton active" id="bu1">Cool Drinks</button>
+                <button class="menuButton" id="bu2">Chips & Starters</button>
+                <button class="menuButton" id="bu3"">Fast Foods</button>
+                <button class="menuButton" id="bu4">Ice Crems</button>
+                <button class="menuButton active" id="bu5">Pickels</button>
+                <button class="menuButton" id="bu6" data-target="cooldrinks">Veg Starters</button>
+                <button class="menuButton" id="bu7">Non-veg Starters</button>
+                <button class="menuButton" id="bu8">Main Course</button>
+                <!-- <button class="menuButton" data-target="#drinks">Drinks</button> -->
+        </div>
+        <hr>
+
+        <!-- This is the card1 webpage -->
+        <div class="menuItems active"  id="card1">
+        <div class="total1">
+                <div class="div1" id="item1">
+                    <img src="dr1.png"  class="img1">
+                    <p class="hide">COCOCOLA DRINK</p>
+                    <P class="hide">35</P>
+                    <div class="headstars">
+                    <div class="cardt1"><h2> Cococola Drinks</h2></div>
+                    <div class="stars"><p class="st">⭐⭐⭐⭐⭐</p></div>
+             
+                    <div class="prices">
+                        <div class="price">
+                            <span class="pr">PRICE</span>
+                            <p class="rate"></i><span class="se">35/-</span></P>
+                        </div>
+                        <div class="price">
+                            <span class="pr">SEENBY</span>
+                            <p class="rate"><span class="se">550 people</span></p>
+                        </div>
+                        <div class="price">
+                            <span class="pr">ITEMS</span>
+                            <p><i class="fa fa-minus" aria-hidden="true">-<span class="rate" id="counter2">1</span></i>
+                                <i class="fa fa-plus"  aria-hidden="true">+</i></p>
+                               </div>
+                               </div>
+                                   
+                </div>
+                <div class="cartbuttoncard1">
+                    <button class="b1" id="" onclick="addTocart(item1)"><span class="carttext">ADD CART</button>
+                </div>
+                    </div>
+
+                <div class="div1" id="item2">
+                    <img src="drink2.png"  class="img1">
+                    <p class="hide">PESPSI DRINKS</p>
+                    <P class="hide">34</P>
+                    <div class="headstars">
+                        <div class="cardt1"><h2> Pespsi Drinks</h2></div>
+                        <div class="stars"><p class="st">⭐⭐⭐⭐⭐</p></div>
+                 
+                        <div class="prices">
+                            <div class="price">
+                                <span class="pr">PRICE</span>
+                                <p class="rate"></i><span class="se">34/-</span></P>
+                            </div>
+                            <div class="price">
+                                <span class="pr">SEENBY</span>
+                                <p class="rate"><span class="se">550 people</span></p>
+                            </div>
+                            <div class="price">
+                                <span class="pr">ITEMS</span>
+                                <p><i class="fa fa-minus" aria-hidden="true">-<span class="rate" id="counter2">1</span></i>
+                                    <i >+</i></p>
+                                   </div>
+                                   </div>
+                                       
+                    </div>
+                    <div class="cartbuttoncard1">
+                        <button class="b1" onclick="addTocart(item2)"><span class="carttext">ADD CART</button>
+                    </div>
+                        </div>
+                </div>
+    
+        <div class="total2">
+            <div class="div2" id="item3">
+                <img src="drink6.png"  class="img1">
+                <p class="hide">THMSUP DRINK</p>
+                    <P class="hide">30</P>
+                <div class="headstars">
+                    <div class="cardt1"><h2> ThmsUp Drinks</h2></div>
+                    <div class="stars"><p class="st">⭐⭐⭐⭐⭐</p></div>
+             
+                    <div class="prices">
+                        <div class="price">
+                            <span class="pr">PRICE</span>
+                            <p class="rate"></i><span class="se">30/-</span></P>
+                        </div>
+                        <div class="price">
+                            <span class="pr">SEENBY</span>
+                            <p class="rate"><span class="se">550 people</span></p>
+                        </div>
+                        <div class="price">
+                            <span class="pr">ITEMS</span>
+                            <p><i class="fa fa-minus" aria-hidden="true">-<span class="rate" id="counter2">1</span></i>
+                                <i class="fa fa-plus"  aria-hidden="true">+</i></p>
+                               </div>
+                               </div>
+                                   
+        </div>
+                <div class="cartbuttoncard1">
+                    <button class="b1" onclick="addTocart(item3)"><span class="carttext">ADD CART</button>
+                </div>
+                    </div>
+            
+            <div class="div2" id="item4">
+                <img src="drink5.png"  class="img1">
+                <p class="hide">SPECIAL SPRIT</p>
+                    <P class="hide">40</P>
+                <div class="headstars">
+                    <div class="cardt1"><h2> Special Sprit</h2></div>
+                    <div class="stars"><p class="st">⭐⭐⭐⭐⭐</p></div>
+             
+                    <div class="prices">
+                        <div class="price">
+                            <span class="pr">PRICE</span>
+                            <p class="rate"></i><span class="se">40/-/-</span></P>
+                        </div>
+                        <div class="price">
+                            <span class="pr">SEENBY</span>
+                            <p class="rate"><span class="se">550 people</span></p>
+                        </div>
+                        <div class="price">
+                            <span class="pr">ITEMS</span>
+                            <p><i class="fa fa-minus" aria-hidden="true">-<span class="rate" id="counter2">1</span></i>
+                                <i class="fa fa-plus"  aria-hidden="true">+</i></p>
+                               </div>
+                               </div>
+                                   
+                </div>
+                <div class="cartbuttoncard1">
+                    <button class="b1" onclick="addTocart(item4)">ADD CART</button>
+                </div>
+                    </div>
+            </div>
+       </div>
+       <!-- <div class="total3">
+          <div class="div3">
+            <img src="veg.jpg"  class="img1">
+            <div class="headstars">
+                <div class="cardt1"><h2> DUM VEG  BIRIYANI</h2></div>
+                <div class="stars"><p class="st">⭐⭐⭐⭐⭐</p></div>
+         
+                <div class="prices">
+                    <div class="price">
+                        <span class="pr">PRICE</span>
+                        <p class="rate"></i><span class="se">330/-</span></P>
+                    </div>
+                    <div class="price">
+                        <span class="pr">SEENBY</span>
+                        <p class="rate"><span class="se">550 people</span></p>
+                    </div>
+                    <div class="price">
+                        <span class="pr">ITEMS</span>
+                        <p><i class="fa fa-minus" aria-hidden="true">-<span class="rate" id="counter2">1</span></i>
+                            <i class="fa fa-plus"  aria-hidden="true">+</i></p>
+                           </div>
+                           </div>
+                               
+            </div>
+            <div class="cartbuttoncard1">
+                <button class="b1"><span class="carttext">ADD CART</button>
+            </div>
+                </div>
+        
+          <div class="div3">
+            <img src="veg.jpg"  class="img1">
+            <div class="headstars">
+                <div class="cardt1"><h2> DUM VEG  BIRIYANI</h2></div>
+                <div class="stars"><p class="st">⭐⭐⭐⭐⭐</p></div>
+         
+                <div class="prices">
+                    <div class="price">
+                        <span class="pr">PRICE</span>
+                        <p class="rate"></i><span class="se">330/-</span></P>
+                    </div>
+                    <div class="price">
+                        <span class="pr">SEENBY</span>
+                        <p class="rate"><span class="se">550 people</span></p>
+                    </div>
+                    <div class="price">
+                        <span class="pr">ITEMS</span>
+                        <p><i class="fa fa-minus" aria-hidden="true">-<span class="rate" id="counter2">1</span></i>
+                            <i class="fa fa-plus"  aria-hidden="true">+</i></p>
+                           </div>    
+            </div>
+            <div class="cartbuttoncard1">
+                <button class="b1"><span class="carttext">ADD CART</button>
+            </div>
+                </div>
+           </div>
+        </div>
+    </div> -->
+    <!-- This is the card2 -->
+    <div class="menuItems active" id="card2">
+    <div class="firstrow">
+    <div class="card-wrap">
+		<div class="card-header one" id="item5">
+            <img src="ch1.png">
+            <p class="hide">LAYS CHIPS</p>
+            <P class="hide">60</P>
+		</div> 
+		<div class="card-content">
+		  <h1 class="card-title">Lays Chips</h1>
+		  <p class="card-text">⭐⭐⭐⭐⭐</p>
+    </div>
+          <div class="card2con">
+            <div class="pric">
+                <p>Price</p>
+                <p>60/-</p>
+            </div>
+            <div class="pric">
+                <p>seenby</p>
+                <p>55</p>
+            </div>
+            <div class="pric">
+                <p>items</p>
+                <p>90</p>
+            </div>
+          </div>
+        <div class="bt"><button class="card-btn one" onclick="addTocart(item5)">Add Cart</button></div>
+	  </div>
+        <div class="card-wrap">
+            <div class="card-header one" id="item6">
+                <img src="ch2.png">
+                <p class="hide">SNACK FACTORY</p>
+                    <P class="hide">55</P>
+            </div> 
+            <div class="card-content">
+              <h1 class="card-title">Sanck Factory</h1>
+              <p class="card-text">⭐⭐⭐⭐⭐</p>
+        </div>
+              <div class="card2con">
+                <div class="pric">
+                    <p>Price</p>
+                    <p>55/-</p>
+                </div>
+                <div class="pric">
+                    <p>seenby</p>
+                    <p>100</p>
+                </div>
+                <div class="pric">
+                    <p>items</p>
+                    <p>90</p>
+                </div>
+              </div>
+            <div class="bt"><button class="card-btn one" onclick="addTocart(item6)">Add Cart</button></div>
+          </div>
+            <div class="card-wrap">
+                <div class="card-header one" id="item7">
+                    <img src="ch3.webp">
+                    <p class="hide">RIND CHIPS </p>
+                    <P class="hide">40</P>
+                </div> 
+                <div class="card-content">
+                  <h1 class="card-title">Rind Chips</h1>
+                  <p class="card-text">⭐⭐⭐⭐⭐</p>
+            </div>
+                  <div class="card2con">
+                    <div class="pric">
+                        <p>Price</p>
+                        <p>40/-</p>
+                    </div>
+                    <div class="pric">
+                        <p>seenby</p>
+                        <p>77</p>
+                    </div>
+                    <div class="pric">
+                        <p>items</p>
+                        <p>90</p>
+                    </div>
+                  </div>
+                <div class="bt"><button class="card-btn one" onclick="addTocart(item7)">Add Cart</button></div>
+              </div>
+                <div class="card-wrap">
+                    <div class="card-header one" id="item8">
+                        <img src="ch4.png">
+                        <p class="hide">DORINTOS CHIPS</p>
+                    <P class="hide">33</P>
+                    </div> 
+                    <div class="card-content">
+                      <h1 class="card-title">Dorintos Chips</h1>
+                      <p class="card-text">⭐⭐⭐⭐⭐</p>
+                </div>
+                      <div class="card2con">
+                        <div class="pric">
+                            <p>Price</p>
+                            <p>33/-</p>
+                        </div>
+                        <div class="pric">
+                            <p>seenby</p>
+                            <p>90</p>
+                        </div>
+                        <div class="pric">
+                            <p>items</p>
+                            <p>90</p>
+                        </div>
+                      </div>
+                    <div class="bt"><button class="card-btn one" onclick="addTocart(item8)">Add Cart</button></div>
+                  </div>
+                  </div>
+            </div>
+	  
+    <!-- This is the card3 webpage -->
+    <div class="menuItems active" id="card3">
+        <div class="chfrow1">
+                <div class="cdiv1" id="item9">
+                        <img src="fa1].png"  class="img">
+                        <h3 class="t">BURGER KING</h3>
+                        <p class="hide">330</p>
+                        <p class="card-text">⭐⭐⭐⭐⭐</p>
+                        <div class="card2co">
+                            <div class="pr">
+                                <p>Price</p>
+                                <p>330/-</p>
+                            </div>
+                            <div class="pr">
+                                <p>seenby</p>
+                                <p>90</p>
+                            </div>
+                            <div class="pr">
+                                <p>items</p>
+                                <p>90</p>
+                            </div>
+                          </div>
+                          <div class="fullbutton">
+                            <button class="b" onclick="addTocart(item9)">Add Cart</button>
+                          </div>
+                </div>
+                <div class="cdiv1" id="item10">
+                        <img src="fa.jpg"  class="img">
+                        <h3 class="t">EGG NOODLES</h3>
+                        <p class="hide">150</p>
+                        <p class="card-text">⭐⭐⭐⭐⭐</p>
+                        <div class="card2co">
+                            <div class="pr">
+                                <p>Price</p>
+                                <p>150/-</p>
+                            </div>
+                            <div class="pr">
+                                <p>seenby</p>
+                                <p>90</p>
+                            </div>
+                            <div class="pr">
+                                <p>items</p>
+                                <p>90</p>
+                            </div>
+                          </div>
+                          <div class="fullbutton">
+                            <button class="b" onclick="addTocart(item10)">Add Cart</button>
+                          </div>
+                </div>
+                <div class="cdiv1" id="item11">
+                    <img src="fa3.png"  class="img">
+                        <h3 class="t">NV PIZZA</h3>
+                        <p class="hide">250</p>
+                        <p class="card-text">⭐⭐⭐⭐⭐</p>
+                        <div class="card2co">
+                            <div class="pr">
+                                <p>Price</p>
+                                <p>250/-</p>
+                            </div>
+                            <div class="pr">
+                                <p>seenby</p>
+                                <p>90</p>
+                            </div>
+                            <div class="pr">
+                                <p>items</p>
+                                <p>90</p>
+                            </div>
+                          </div>
+                          <div class="fullbutton">
+                            <button class="b" onclick="addTocart(item11)">Add Cart</button>
+                          </div>
+                </div>
+                <div class="cdiv1" id="item12">
+                    <img src="fa4.jpg"  class="img">
+                    <h3 class="t">SAMOSA</h3>
+                    <P class="hide">50</P>
+                    <p class="card-text">⭐⭐⭐⭐⭐</p>
+                    <div class="card2co">
+                        <div class="pr">
+                            <p>Price</p>
+                            <p>50</p>
+                        </div>
+                        <div class="pr">
+                            <p>seenby</p>
+                            <p>90</p>
+                        </div>
+                        <div class="pr">
+                            <p>items</p>
+                            <p>90</p>
+                        </div>
+                      </div>
+                      <div class="fullbutton">
+                        <button class="b" onclick="addTocart(item12)">Add Cart</button>
+                      </div>
+                </div>
+        </div></div>
+       
+     <!-- thisis the card4 -->
+     <div class="menuItems active" id="card4">
+       <div class="firstrow">
+    <div class="container">
+        <div class="card" id="item13">
+            <img src="ic1.png" alt="Ice cream Image" class="image">
+            <p class="hide">ICE CREAM 1</p>
+            <p class="hide">120</p>
+            <div class="data">
+                <h1 class="title">Ice Cream 1</h1>
+                <span class="price">120</span>
+                <p class="description">
+                    Ice cream with rich flavors and high-quality ingredients
+                </p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <a href="#" class="review" target="_blank"><small>2,211 Reviews</small></a>
+                <div>
+                    <button class="button" target="_blank" onclick="addTocart(item13)">Order Now</button>
+                </div>
+         </div>
+         </div>
+         </div>
+         <div class="container">
+         <div class="card" id="item14">
+            <img src="ic22.png" alt="Ice cream Image" class="image">
+            <p class="hide">ICE CREAM 2</p>
+            <P class="hide">100</P>
+            <div class="data">
+                <h1 class="title">Ice Cream 2</h1>
+                <span class="price">100</span>
+                <p class="description">
+                    Ice cream with rich flavors and high-quality ingredients
+                </p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <a href="#" class="review" target="_blank"><small>2,211 Reviews</small></a>
+                <div>
+                    <button class="button" target="_blank" onclick="addTocart(item14)">Order Now</button>
+                </div>
+         </div>
+         </div>
+        </div>
+        <div class="container">
+            <div class="card" id="item15">
+               <img src="ic333.png" alt="Ice cream Image" class="image">
+               <p class="hide">ICE CREAM 3</p>
+                <P class="hide">140</P>
+               <div class="data">
+                   <h1 class="title">Ice Cream 3</h1>
+                   <span class="price">140</span>
+                   <p class="description">
+                       Ice cream with rich flavors and high-quality ingredients
+                   </p>
+                   <span class="fa fa-star checked"></span>
+                   <span class="fa fa-star checked"></span>
+                   <span class="fa fa-star checked"></span>
+                   <span class="fa fa-star checked"></span>
+                   <span class="fa fa-star"></span>
+                   <a href="" class="review" target="_blank"><small>2,211 Reviews</small></a>
+                   <div>
+                       <button class="button" target="_blank" onclick="addTocart(item15)">Order Now</button>
+                   </div>
+            </div>
+            </div>
+           </div>
+           <div class="container">
+            <div class="card" id="item16">
+               <img src="ic44.png" alt="Ice cream Image" class="image">
+               <p class="hide">ICE CREAM 4</p>
+               <p class="hide">140</p>
+               <div class="data">
+                   <h1 class="title">Ice Cream 4</h1>
+                   <span class="price">140</span>
+                   <p class="description">
+                       Ice cream with rich flavors and high-quality ingredients
+                   </p>
+                   <span class="fa fa-star checked"></span>
+                   <span class="fa fa-star checked"></span>
+                   <span class="fa fa-star checked"></span>
+                   <span class="fa fa-star checked"></span>
+                   <span class="fa fa-star"></span>
+                   <a href="" class="review" target="_blank"><small>2,211 Reviews</small></a>
+                   <div>
+                       <button class="button" target="_blank" onclick="addTocart(item16)">Order Now</button>
+                   </div>
+            </div>
+            </div>
+           </div>
+
+        </div>
+     </div>
+
+</div>
+
+    <!-- This is the card5 -->
+    <div class="menuItems active" id="card5">
+        <div class="total1">
+                <div class="div1" id="item17">
+                    <img src="pi1.jpg"  class="img1">
+                    <p class="hide">LEMON PiCKELS</p>
+                    <P class="hide">240</P>
+                    <div class="headstars">
+                    <div class="cardt1"><h2> Lemon Pickels</h2></div>
+                    <div class="stars"><p class="st">⭐⭐⭐⭐⭐</p></div>
+             
+                    <div class="prices">
+                        <div class="price">
+                            <span class="pr">PRICE</span>
+                            <p class="rate"></i><span class="se">240/-</span></P>
+                        </div>
+                        <div class="price">
+                            <span class="pr">SEENBY</span>
+                            <p class="rate"><span class="se">550 people</span></p>
+                        </div>
+                        <div class="price">
+                            <span class="pr">ITEMS</span>
+                            <p><i class="fa fa-minus" aria-hidden="true">-<span class="rate" id="counter2">1</span></i>
+                                <i class="fa fa-plus"  aria-hidden="true">+</i></p>
+                               </div>
+                               </div>
+                                   
+                </div>
+                <div class="cartbuttoncard1">
+                    <button class="b1" onclick="addTocart(item17)"><span class="carttext">ADD CART</button>
+                </div>
+                    </div>
+
+                <div class="div1" id="item18">
+                    <img src="pi2.png"  class="img1">
+                    <p class="hide">MANGO PICKEL</p>
+                <P class="hide">160</P>
+                    <div class="headstars">
+                        <div class="cardt1"><h2> Mango Pickels</h2></div>
+                        <div class="stars"><p class="st">⭐⭐⭐⭐⭐</p></div>
+                 
+                        <div class="prices">
+                            <div class="price">
+                                <span class="pr">PRICE</span>
+                                <p class="rate"></i><span class="se">160/-</span></P>
+                            </div>
+                            <div class="price">
+                                <span class="pr">SEENBY</span>
+                                <p class="rate"><span class="se">550 people</span></p>
+                            </div>
+                            <div class="price">
+                                <span class="pr">ITEMS</span>
+                                <p><i class="fa fa-minus" aria-hidden="true">-<span class="rate" id="counter2">1</span></i>
+                                    <i >+</i></p>
+                                   </div>
+                                   </div>
+                                       
+                    </div>
+                    <div class="cartbuttoncard1">
+                        <button class="b1" onclick="addTocart(item18)"><span class="carttext">ADD CART</button>
+                    </div>
+                        </div>
+                </div>
+    
+        <div class="total2">
+            <div class="div2" id="item19">
+                <img src="pi3.webp"  class="img1">
+                <p class="hide">SWEET MANGO PICKEL</p>
+                <P class="hide">110</P>
+                <div class="headstars">
+                    <div class="cardt1"><h2>Sweet Mango Pickels</h2></div>
+                    <div class="stars"><p class="st">⭐⭐⭐⭐⭐</p></div>
+             
+                    <div class="prices">
+                        <div class="price">
+                            <span class="pr">PRICE</span>
+                            <p class="rate"></i><span class="se">110/-</span></P>
+                        </div>
+                        <div class="price">
+                            <span class="pr">SEENBY</span>
+                            <p class="rate"><span class="se">550 people</span></p>
+                        </div>
+                        <div class="price">
+                            <span class="pr">ITEMS</span>
+                            <p><i class="fa fa-minus" aria-hidden="true">-<span class="rate" id="counter2">1</span></i>
+                                <i class="fa fa-plus"  aria-hidden="true">+</i></p>
+                               </div>
+                               </div>
+                                   
+        </div>
+                <div class="cartbuttoncard1">
+                    <button class="b1" onclick="addTocart(item19)"><span class="carttext">ADD CART</button>
+                </div>
+                    </div>
+            
+            <div class="div2" id="item20">
+                <img src="pi4.webp"  class="img1">
+                <p class="hide">CHICKEN PICKEL</p>
+                <P class="hide">200</P>
+                <div class="headstars">
+                    <div class="cardt1"><h2> Chicken Pickels</h2></div>
+                    <div class="stars"><p class="st">⭐⭐⭐⭐⭐</p></div>
+             
+                    <div class="prices">
+                        <div class="price">
+                            <span class="pr">PRICE</span>
+                            <p class="rate"></i><span class="se">200/-</span></P>
+                        </div>
+                        <div class="price">
+                            <span class="pr">SEENBY</span>
+                            <p class="rate"><span class="se">550 people</span></p>
+                        </div>
+                        <div class="price">
+                            <span class="pr">ITEMS</span>
+                            <p><i class="fa fa-minus" aria-hidden="true">-<span class="rate" id="counter2">1</span></i>
+                                <i class="fa fa-plus"  aria-hidden="true">+</i></p>
+                               </div>
+                               </div>
+                                   
+                </div>
+                <div class="cartbuttoncard1">
+                    <button class="b1" onclick="addTocart(item20)"><span class="carttext">ADD CART</button>
+                </div>
+                    </div>
+            </div>
+       </div>
+    
+    <!-- This is the card6 -->
+    <div class="menuItems active" id="card6">
+        <div class="firstrow">
+        <div class="card-wrap">
+            <div class="card-header one" id="item21">
+                <img src="vg1.jpg">
+                <p class="hide">VEG STARTERS 1</p>
+                <P class="hide">100</P>
+            </div> 
+            <div class="card-content">
+              <h1 class="card-title">Veg Starters 1</h1>
+              <p class="card-text">⭐⭐⭐⭐⭐</p>
+        </div>
+              <div class="card2con">
+                <div class="pric">
+                    <p>Price</p>
+                    <p>100/-</p>
+                </div>
+                <div class="pric">
+                    <p>seenby</p>
+                    <p>90</p>
+                </div>
+                <div class="pric">
+                    <p>items</p>
+                    <p>90</p>
+                </div>
+              </div>
+            <div class="bt"><button class="card-btn one" onclick="addTocart(item21)">Add Cart</button></div>
+          </div>
+            <div class="card-wrap">
+                <div class="card-header one" id="item22">
+                    <img src="vg2.webp">
+                    <p class="hide">VEG STARTERS 2</p>
+                <P class="hide">120</P>
+                </div> 
+                <div class="card-content">
+                  <h1 class="card-title">Veg Starters 2</h1>
+                  <p class="card-text">⭐⭐⭐⭐⭐</p>
+            </div>
+                  <div class="card2con">
+                    <div class="pric">
+                        <p>Price</p>
+                        <p>120/-</p>
+                    </div>
+                    <div class="pric">
+                        <p>seenby</p>
+                        <p>90</p>
+                    </div>
+                    <div class="pric">
+                        <p>items</p>
+                        <p>90</p>
+                    </div>
+                  </div>
+                <div class="bt"><button class="card-btn one" onclick="addTocart(item22)">Add Cart</button></div>
+              </div>
+                <div class="card-wrap">
+                    <div class="card-header one" id="item23">
+                        <img src="vg3.jpg">
+                        <p class="hide">VEG STARTERS 3</p>
+                <P class="hide">150</P>
+                    </div> 
+                    <div class="card-content">
+                      <h1 class="card-title">Veg Starters 3</h1>
+                      <p class="card-text">⭐⭐⭐⭐⭐</p>
+                </div>
+                      <div class="card2con">
+                        <div class="pric">
+                            <p>Price</p>
+                            <p>150/-</p>
+                        </div>
+                        <div class="pric">
+                            <p>seenby</p>
+                            <p>90</p>
+                        </div>
+                        <div class="pric">
+                            <p>items</p>
+                            <p>90</p>
+                        </div>
+                      </div>
+                    <div class="bt"><button class="card-btn one" onclick="addTocart(item23)">Add Cart</button></div>
+                  </div>
+                    <div class="card-wrap">
+                        <div class="card-header one" id="item24">
+                            <img src="vg4.jpg">
+                            <p class="hide">VEG STARTERS 4</p>
+                <P class="hide">99</P>
+                        </div> 
+                        <div class="card-content">
+                          <h1 class="card-title">Vag Starters 4</h1>
+                          <p class="card-text">⭐⭐⭐⭐⭐</p>
+                    </div>
+                          <div class="card2con">
+                            <div class="pric">
+                                <p>Price</p>
+                                <p>99/-</p>
+                            </div>
+                            <div class="pric">
+                                <p>seenby</p>
+                                <p>90</p>
+                            </div>
+                            <div class="pric">
+                                <p>items</p>
+                                <p>90</p>
+                            </div>
+                          </div>
+                        <div class="bt"><button class="card-btn one" onclick="addTocart(item24)">Add Cart</button></div>
+                      </div>
+                      </div>
+                </div>
+          
+    
+
+         <!-- This is the card7 webpage -->
+         <div class="menuItems active" id="card7">
+            <div class="chfrow1">
+                    <div class="cdiv1" id="item25">
+                            <img src="nv1.jpg"  class="img">
+                            <h3 class="t">NV STARTERS 1</h3>
+                            <p class="hide">200</p>
+                            <p class="card-text">⭐⭐⭐⭐⭐</p>
+                            <div class="card2co">
+                                <div class="pr">
+                                    <p>Price</p>
+                                    <p>200/-</p>
+                                </div>
+                                <div class="pr">
+                                    <p>seenby</p>
+                                    <p>90</p>
+                                </div>
+                                <div class="pr">
+                                    <p>items</p>
+                                    <p>90</p>
+                                </div>
+                              </div>
+                              <div class="fullbutton">
+                                <button class="b" onclick="addTocart(item25)">Add Cart</button>
+                              </div>
+                    </div>
+                    <div class="cdiv1" id="item26">
+                            <img src="nv2.webp"  class="img">
+                            <h3 class="t">NV STARTERS 2</h3>
+                            <p class="hide">210</p>
+                            <p class="card-text">⭐⭐⭐⭐⭐</p>
+                            <div class="card2co">
+                                <div class="pr">
+                                    <p>Price</p>
+                                    <p>210/-</p>
+                                </div>
+                                <div class="pr">
+                                    <p>seenby</p>
+                                    <p>90</p>
+                                </div>
+                                <div class="pr">
+                                    <p>items</p>
+                                    <p>90</p>
+                                </div>
+                              </div>
+                              <div class="fullbutton">
+                                <button class="b" onclick="addTocart(item26)">Add Cart</button>
+                              </div>
+                    </div>
+                    <div class="cdiv1" id="item27">
+                        <img src="nv3.jpg"  class="img">
+                            <h3 class="t">NV STARTERS 3</h3>
+                            <P class="hide">180</P>
+                            <p class="card-text">⭐⭐⭐⭐⭐</p>
+                            <div class="card2co">
+                                <div class="pr">
+                                    <p>Price</p>
+                                    <p>180/-</p>
+                                </div>
+                                <div class="pr">
+                                    <p>seenby</p>
+                                    <p>90</p>
+                                </div>
+                                <div class="pr">
+                                    <p>items</p>
+                                    <p>90</p>
+                                </div>
+                              </div>
+                              <div class="fullbutton">
+                                <button class="b" onclick="addTocart(item27)">Add Cart</button>
+                              </div>
+                    </div>
+                    <div class="cdiv1" id="item28">
+                        <img src="nv4.jpg"  class="img">
+                        <h3 class="t">NV STARTERS 4</h3>
+                        <p class="hide">190</p>
+                        <p class="card-text">⭐⭐⭐⭐⭐</p>
+                        <div class="card2co">
+                            <div class="pr">
+                                <p>Price</p>
+                                <p>190/-</p>
+                            </div>
+                            <div class="pr">
+                                <p>seenby</p>
+                                <p>90</p>
+                            </div>
+                            <div class="pr">
+                                <p>items</p>
+                                <p>90</p>
+                            </div>
+                          </div>
+                          <div class="fullbutton">
+                            <button class="b">Add Cart</button>
+                          </div>
+                    </div>
+            </div></div>
+    
+        <!--  thisis the card8 -->
+        <div class="menuItems active" id="card8">
+        
+            <div class="firstrow">
+              <div class="container" id="item29">
+                <img src="bi1.jpg" alt="" width="300" class="imge"/>
+                <p class="hide"> LEG PIECE BIRIYANI</p>
+                <P class="hide">450</P>
+                <div class="content-box" style="background-color: black;">
+                    <h4 class="name">Leg piece Biriyani</h4>
+                    <p></p>
+                    <div class="btn">
+                        <h2 class="price">450</h2>
+                        <button style="background-color: orange;" onclick="addTocart(item29)">ADD CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="item30">
+              <img src="bi2.jpg" alt="" class="imge"/>
+              <p class="hide">FRY PIECE BIRIYANI</p>
+                <P class="hide">330</P>
+              <div class="content-box" style="background-color: black;">
+                  <h4 class="name">Fry piece Biriyani</h4>
+                  <p></p>
+                  <div class="btn">
+                      <h2 class="price">330</h2>
+                      <button style="background-color: orange;" onclick="addTocart(item30)">ADD CART</button>
+                  </div>
+              </div>
+            </div>
+            <div class="container" id="item31">
+            <img src="bi3.jpg" alt="" width="300" class="imge"/>
+            <p class="hide">EGG DUM BIRIYANI</p>
+                <P class="hide">250</P>
+            <div class="content-box" style="background-color: black;">
+                <h4 class="name">Egg Dum Biriyani</h4>
+                <p></p>
+                <div class="btn">
+                    <h2 class="price">250</h2>
+                    <button style="background-color: orange;" onclick="addTocart(item31)">ADD CART</button>
+                </div>
+            </div>
+            </div>
+            <div class="container" id="item32">
+            <img src="bi4.jpg" alt="" width="300" class="imge"/>
+            <p class="hide">VEG BIRIYANI</p>
+                <P class="hide">180</P>
+            <div class="content-box" style="background-color: black;">
+                <h4 class="name">Veg Biriyani</h4>
+                <p></p>
+                <div class="btn">
+                    <h2 class="price">180</h2>
+                    <button style="background-color: orange;" onclick="addTocart(item32)">ADD CART</button>
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <hr>
+            <div class="foo">
+                jdjd
+            </div>
+
+        
+    <script src="bir.js"></script>
+        
+    <script src="janother.js"></script>
+
+    </body>
+</html>

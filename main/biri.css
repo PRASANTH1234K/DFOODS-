@@ -1,0 +1,214 @@
+.divtotal
+{
+    display: flex;
+    flex-direction: column;
+}
+.div1
+{
+    display: flex;
+    width: 90%;
+    height: 200px;
+    margin: 30px;
+    background-color: black;
+    border-width: 20px;
+    border-color: aliceblue;
+    box-shadow: 10px 10px 8px #888888;
+    border-radius: 20px;
+    transition: transform .2s; /* Animation */
+}
+
+.div1:hover
+{
+    -ms-transform: scale(0.8); /* IE 9 */
+    -webkit-transform: scale(0.8); /* Safari 3-8 */
+    transform: scale(1.010); 
+}
+.div1 .img1 {
+    float: left;
+    width: 30%;
+    height: 100%;
+    border-radius: 10px;
+    
+  }
+  .div1 h2 {
+    position: relative;
+    top: 10px;
+    left: 40px;
+    font-family: banning Comic Sans;
+    background: linear-gradient(
+            to right, #f32170, #ff6b08,
+             #cf23cf, #eedd44);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+  }
+  .fa
+  {
+    color: gold;
+    position: relative;
+    left: 40px;
+    padding: 10px;
+    margin: 1px;
+  }
+  
+  .prices
+  {
+    display: flex;
+    flex-direction: row;
+  }
+  .price
+  {
+    padding: 20px;
+    position: relative;
+    left: 20px;
+  }
+  .price .pr
+  {
+    color: tomato;
+    font-size: larger;
+  }
+  .price .rate
+  {
+    color: goldenrod;
+    position: relative;
+    left: 10px;
+  }
+.buttons
+ {
+    position: relative;
+    left: 0%;
+    padding: 20px;
+    margin: auto;
+ }
+ .bu1
+ {
+    padding: 20px;
+    margin: 10px;
+    width: 180px;
+	height: 60px;
+    border-radius: 10px;
+  background-color:burlywood;
+    color: #fff;
+    font-size: 1.2em;
+ }
+ .cart-button {
+	position: relative;
+	padding: 10px;
+	width: 200px;
+	height: 60px;
+	border: 0;
+	border-radius: 10px;
+	background-color: #4834d4;
+	outline: none;
+	cursor: pointer;
+	color: #fff;
+	transition: .3s ease-in-out;
+	overflow: hidden;
+}
+.cart-button:hover {
+	background-color: #35269b;
+}
+.cart-button:active {
+	transform: scale(.9);
+}
+
+.cart-button .fa-shopping-cart {
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	left: -10%;
+	font-size: 2em;
+	transform: translate(-50%,-50%);
+}
+.cart-button .fa-box {
+	position: absolute;
+	z-index: 3;
+	top: -20%;
+	left: 52%;
+	font-size: 1.2em;
+	transform: translate(-50%,-50%);
+}
+.cart-button span {
+	position: absolute;
+	z-index: 3;
+	left: 50%;
+	top: 50%;
+	font-size: 1.2em;
+	color: #fff;
+	transform: translate(-50%,-50%);
+}
+.cart-button span.add-to-cart {
+	opacity: 1;
+}
+.cart-button span.added {
+	opacity: 0;
+}
+
+.cart-button.clicked .fa-shopping-cart {
+	animation: cart 1.5s ease-in-out forwards;
+}
+.cart-button.clicked .fa-box {
+	animation: box 1.5s ease-in-out forwards;
+}
+.cart-button.clicked span.add-to-cart {
+	animation: txt1 1.5s ease-in-out forwards;
+}
+.cart-button.clicked span.added {
+	animation: txt2 1.5s ease-in-out forwards;
+}
+@keyframes cart {
+	0% {
+		left: -10%;
+	}
+	40%, 60% {
+		left: 50%;
+	}
+	100% {
+		left: 110%;
+	}
+}
+@keyframes box {
+	0%, 40% {
+		top: -20%;
+	}
+	60% {
+		top: 40%;
+		left: 52%;
+	}
+	100% {
+		top: 40%;
+		left: 112%;
+	}
+}
+@keyframes txt1 {
+	0% {
+		opacity: 1;
+	}
+	20%, 100% {
+		opacity: 0;
+	}
+}
+@keyframes txt2 {
+	0%, 80% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.fa-plus
+{
+    padding: 0%;
+    margin: 0%;
+    position: relative;
+    left: 20px;
+}
+.fa-minus
+{
+    padding: 0%;
+    margin: 0%;
+    position: relative;
+    left: 10px;
+}
+
+ 
