@@ -77,21 +77,16 @@
 	float: left;
 
 }
-.a ul li a
+.a ul li a:hover
 {
-	text-decoration: none;
-}
-.a ul li:hover
-{
-	border-style:none;
-	background-color: springgreen;
-	border-radius: 15px;
+	color: #aa660c;
+	
 }
 #home
 {
 	border-style:none;
-	background-color: springgreen;
-	border-radius: 15px;
+	color: #aa660c;
+
 }
 .search
 {
